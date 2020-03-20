@@ -256,20 +256,19 @@
       timer.setSeconds(timer.getSeconds() - 1);
 
       const newTime = {
-        month: transformToTwoDidgits(timer.getUTCMonth()),
-        days: transformToTwoDidgits(timer.getUTCDay()),
-        hour: transformToTwoDidgits(timer.getUTCHours()),
-        min: transformToTwoDidgits(timer.getUTCMinutes()),
-        sec: transformToTwoDidgits(timer.getUTCSeconds())
+        days: transformToTwoDigits(Math.floor(+timer/1000/60/60/24)),
+        hour: transformToTwoDigits(Math.floor(+timer/1000/60/60)),
+        min: transformToTwoDigits(Math.floor(+timer/1000/60)),
+        sec: transformToTwoDigits(Math.floor(+timer/1000))
       }
       empty && empty.remove();
-      timerView.innerText = `[${newTime.month}:${newTime.days}:${newTime.hour}:${newTime.min}:${newTime.sec}]`;
+      timerView.innerText = `[${newTime.days}:${newTime.hour}:${newTime.min}:${newTime.sec}]`;
     }, 1000);
 
     const langSelect = document.getElementById('lang_selector');
     langSelect.onchange = event => setLocalText(event.target.value);
   })
-  const transformToTwoDidgits = (num) => num < 10 ? `0${num}` : `${num}`;
+  const transformToTwoDigits = (num) => num < 10 ? `0${num}` : `${num}`;
 
   function setLocalText(localization = 'en') {
     const components = {
