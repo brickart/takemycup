@@ -2,6 +2,6 @@ import App from '../components/App';
 
 export default () => (
   <App>
-    <p>About Page</p>
+    <p>About Page2</p>
   </App>
 );
