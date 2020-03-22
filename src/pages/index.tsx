@@ -102,7 +102,7 @@ export default class IndexPage extends Component {
               <div className='row'>
                 <span id='language' className='text'>{this.state.content.language}</span>
                 <div className='selector'>
-                  <select id='lang_selector' onChange={this.languageChangeHandler.bind(this)}>
+                  <select id='lang_selector' onChange={this.languageChangeHandler}>
                     <option value='en'>En</option>
                     <option value='ru'>Ру</option>
                     <option value='ukr'>Укр</option>
@@ -120,7 +120,7 @@ export default class IndexPage extends Component {
     );
   }
 
-  private languageChangeHandler(event): void {
+  private languageChangeHandler = (event): void => {
     this.setLocalText(event.target.value);
   }
 
