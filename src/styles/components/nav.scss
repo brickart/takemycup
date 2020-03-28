@@ -1,0 +1,11 @@
+$font-text: 'Roboto', sans-serif;
+
+.nav .nav__link {
+    padding: 8px 12px;
+    font-family: $font-text;
+    font-weight: 400;
+    color: #979797;
+    text-decoration: none;
+    &.active { color: #171818 }
+    &:hover { color: #171818 }
+}

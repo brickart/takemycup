@@ -1,10 +1,13 @@
+import { Header } from "../components";
+
 export default () => (
     <>
-      <div className="header">
+      <Header />
+      {/* <div className="header">
         <div className="header__content">
           <div className="header__article"> </div>
         </div>
-      </div>
+      </div> */}
       <div className="main">
         <div className="main__content-with-col">
             <div className="main__col-big"></div>

@@ -21,8 +21,8 @@ $tablet-width: 768px;
   }
 }
 
-@mixin phone {
-  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+@mixin mobile {
+  @media (max-width: #{$tablet-width}) {
     @content;
   }
 }
