@@ -4,7 +4,7 @@ import { AppContext, AppProps } from 'next/app';
 import Head from 'next/head';
 import * as React from 'react';
 
-import '../../styles/index.scss';
+import '../../scss/index.scss';
 
 class MyApp extends React.Component<AppContext & AppProps> {
   public componentDidMount() {

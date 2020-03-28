@@ -79,14 +79,14 @@ export default class IndexPage extends Component {
   public render() {
     return (
       <div className='wrapper'>
-        <header>
+        <div id="header">
           <div className='safe-area'>
             <div className='header__content'>
               <span className='logo'>Take my cup</span>
               <span id='headerContent' className='text'>{this.state.content.headerContent}</span>
             </div>
           </div>
-        </header>
+        </div>
         <div className='center'>
           <div className='col'>
             <h1 id='comingSoon'>{this.state.content.comingSoon}</h1>

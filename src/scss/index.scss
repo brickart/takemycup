@@ -1,8 +1,10 @@
+@import 'constants';
 @import 'media';
 @import 'common';
 
 @import 'layouts';
 @import 'components';
+@import 'blocks';
 
 h1 {
   margin: 8px 0;
@@ -35,7 +37,7 @@ body {
   margin-right: 20px;
 }
 
-header {
+#header {
   width: 100%;
   margin: 0 auto;
   height: 60px;

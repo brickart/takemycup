@@ -6,39 +6,28 @@ import { Nav } from "../nav";
 // import { IStore } from "../../app/core/store/IStore";
 // import { useSelector, useDispatch } from "react-redux";
 // import { ShoppingCartOutlined } from '@material-ui/icons';
-import Icon from '@material-ui/core/Icon';
+import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
+import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import SearchIcon from '@material-ui/icons/Search';
 // import Badge from '@material-ui/core/Badge';
 
-const Header: React.FunctionComponent<IHeader.IProps> = (
-  props
-): JSX.Element => {
-  // const cart = useSelector((state: IStore) => state.shop.cart);
-  // const dispatch = useDispatch();
-
+const Header: React.FunctionComponent<IHeader.IProps> = (): JSX.Element => {
   return (
     <header>
       <div className="header">
         <div className="header-left">
           <div className="logo">
             <Link href="/">
-              <a><img src="/logo/sportyvnyi.svg" alt="logo" /></a>
+              <a><img src="/images/logo.svg" alt="logo" /></a>
             </Link>
           </div>
           <Nav />
         </div>
         <div className="header-right">
           <div className="tools">
-            <button className="btn btn--icon">
-              <img src="/icons/search-24px.svg" alt="search" />
-            </button>
-            <button className="btn btn--icon">
-              <img src="/icons/bookmark_border-24px.svg" alt="bookmark" />
-            </button>
-            <button className="btn btn--icon">
-              <Icon>notifications</Icon>
-              {/* <img src="/icons/notifications_none-24px.svg" alt="notifications" /> */}
-            </button>
-            
+            <SearchIcon />
+            <BookmarkBorderIcon />
+            <NotificationsNoneIcon />
           </div>
           <a className="link" href="#">Войти</a>
         </div>
