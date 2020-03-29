@@ -9,26 +9,10 @@
     flex-direction: row;
 }
 
-.header {
-    width: 100vw;
-    background-color: tan;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-}
-
 .main {
     width: 100vw;
     background-color: tomato;
     min-height: calc(100vh - 120px);
-    display: flex;
-    justify-content: center;
-}
-
-.footer {
-    width: 100vw;
-    background-color: tan;
-    height: 60px;
     display: flex;
     justify-content: center;
 }

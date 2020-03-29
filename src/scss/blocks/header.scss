@@ -4,7 +4,22 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    &__content {
+    &__container {
         justify-content: space-between;
+    }
+    &__container, &__left, &__right {
+        align-items: center;
+    }
+    &__tools {
+        margin: 0 16px;
+        @include mobile {
+            margin: 0;
+        }
+    }
+    &__link {
+        padding: 8px 0;
+        @include mobile {
+            display: none;
+        }
     }
 }

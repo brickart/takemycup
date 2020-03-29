@@ -67,7 +67,7 @@ body {
   align-items: baseline;
 }
 
-footer {
+#footer {
   width: 100%;
   margin: 0 auto;
   height: 60px;
@@ -144,11 +144,11 @@ footer {
 
 @media screen and (max-width: 1280px) {
   .safe-area {
-    padding: 0 16px;
+    margin: 0 16px;
   }
 }
 @media screen and (max-width: 425px) {
-  .header__content {
+  #header .header__content {
     flex-direction: column;
   }
 }

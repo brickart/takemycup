@@ -1,5 +1,6 @@
 import * as React from "react";
 
+import IconButton from '@material-ui/core/IconButton';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import SearchIcon from '@material-ui/icons/Search';
@@ -11,22 +12,30 @@ import { Nav } from "../nav";
 const Header: React.FunctionComponent<IHeader.IProps> = (): JSX.Element => {
   return (
     <header className="header">
-      <div className="safe-area row header__content">
-        <div className="header-left row">
-          <div className="logo">
+      <div className="safe-area row header__container">
+        <div className="header__left row">
+          <div className="header__logo">
             <Link href="/">
               <a><img src="/images/logo.svg" alt="logo" /></a>
             </Link>
           </div>
           <Nav />
         </div>
-        <div className="header-right row">
-          <div className="tools">
-            <SearchIcon />
-            <BookmarkBorderIcon />
-            <NotificationsNoneIcon />
+        <div className="header__right row">
+          <div className="header__tools">
+            <IconButton aria-label="delete">
+              <SearchIcon />
+            </IconButton>
+            <IconButton aria-label="delete">
+              <BookmarkBorderIcon />
+            </IconButton>
+            <IconButton aria-label="delete">
+              <NotificationsNoneIcon />
+            </IconButton>
           </div>
-          <a className="link" href="#">Войти</a>
+          <Link href="#">
+            <a className="nav__link header__link">Войти</a>
+          </Link>
         </div>
       </div>
     </header>

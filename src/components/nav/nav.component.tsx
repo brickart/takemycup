@@ -2,22 +2,17 @@
 import * as React from "react";
 import Link from "next/link";
 
-// import "./style.scss";
-
 import { INav } from "./nav";
 
 const LINKS: INavItemProps[] = [
   { id: '0', title: 'Главная', url: '/'},
-  { id: '1', title: 'Каталог', url: '/products'},
   { id: '2', title: 'Категории', url: '/categories'},
   { id: '3', title: 'Статьи', url: '/#'},
   { id: '4', title: 'Вопросы', url: '/#'},
-  { id: '5', title: 'Информация', url: '/#'},
+  { id: '5', title: 'Рецепты', url: '/#'},
 ];
 
-const Nav: React.FunctionComponent<INav.IProps> = (
-  props
-): JSX.Element => {
+const Nav: React.FunctionComponent<INav.IProps> = (): JSX.Element => {
   return (
     <div className="nav">
       {LINKS.map(NavItem)}

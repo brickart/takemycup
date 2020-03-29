@@ -95,7 +95,7 @@ export default class IndexPage extends Component {
 
           </div>
         </div>
-        <footer>
+        <footer id="footer">
           <div className='safe-area'>
             <div className='footer__content'>
               <span id='copyright' className='text'>{this.state.content.copyright}</span>
