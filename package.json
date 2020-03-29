@@ -12,7 +12,7 @@
     "deploy": "firebase deploy",
     "clean": "rimraf \"dist\"",
     "build-app": "next build \"src\"",
-    "build-public": "cpx \"src/public/**/*.*\" \"dist/public\" -C",
+    "build-public": "cpx \"public/**/*.*\" \"dist/public\" -C",
     "build-functions": "tsc --project functions",
     "lint-app": "tslint --project src",
     "typecheck-app": "tsc --project src",
