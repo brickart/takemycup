@@ -1,6 +1,7 @@
 $font-text: 'Roboto', sans-serif;
 
 .nav {
+    padding: 0 16px;
     &__link {
         font-size: 14px;
         padding: 8px 12px;
@@ -8,6 +9,7 @@ $font-text: 'Roboto', sans-serif;
         font-weight: 400;
         letter-spacing: 0.03em;
         color: #979797;
+        box-sizing: border-box;
         text-decoration: none;
         &.active { color: #171818 }
         &:hover { color: #171818 }

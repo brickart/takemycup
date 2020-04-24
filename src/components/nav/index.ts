@@ -1,3 +1,3 @@
-import { Nav } from "./nav.component";
+import { Nav } from './nav.component';
 
 export { Nav };

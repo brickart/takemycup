@@ -78,8 +78,8 @@ export default class IndexPage extends Component {
 
   public render() {
     return (
-      <div className='wrapper'>
-        <div id="header">
+      <div id='wrapper'>
+        <div id='header'>
           <div className='safe-area'>
             <div className='header__content'>
               <span className='logo'>Take my cup</span>
@@ -95,7 +95,7 @@ export default class IndexPage extends Component {
 
           </div>
         </div>
-        <footer id="footer">
+        <footer id='footer'>
           <div className='safe-area'>
             <div className='footer__content'>
               <span id='copyright' className='text'>{this.state.content.copyright}</span>
