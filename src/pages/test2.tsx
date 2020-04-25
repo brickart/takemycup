@@ -8,12 +8,8 @@ export default () => {
   articlesRef.get().then((doc) => {
     if (doc.docs && doc.docs.length) {
       doc.docs.map((d) => console.log("Document data:", d.data()));
-    //   console.log("Document data:", doc.data());
-    // } else {
-      // doc.data() will be undefined in this case
-      console.log("No such document!");
     }
-  }).catch(function (error) {
+  }).catch((error) => {
     console.log("Error getting document:", error);
   });
 
