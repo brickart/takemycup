@@ -1,5 +1,15 @@
 import * as React from 'react';
+import styled from 'styled-components';
 
-const TitleComponent: React.FunctionComponent = ({ children }) => (<>{children}</>);
+const Title = styled.h1`
+    font-size: 44px;
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    letter-spacing: 1.5px;
+`;
 
-export {TitleComponent};
+const TitleComponent: React.FunctionComponent = ({ children }) => (<Title>{children}</Title>);
+
+export { TitleComponent };

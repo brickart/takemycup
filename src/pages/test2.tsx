@@ -1,17 +1,10 @@
+import * as React from 'react';
 import { Header, Footer } from '../components';
-import firebase from '../infrastructure/firebase';
+// import firebase from '../infrastructure/firebase';
 
 export default () => {
-  const db = firebase.firestore();
-  const articlesRef = db.collection('articles');
-
-  articlesRef.get().then((doc) => {
-    if (doc.docs && doc.docs.length) {
-      doc.docs.map((d) => console.log("Document data:", d.data()));
-    }
-  }).catch((error) => {
-    console.log("Error getting document:", error);
-  });
+  // const db = firebase.firestore();
+  // const articlesRef = db.collection('articles');
 
   return (
     <div className='wrapper'>

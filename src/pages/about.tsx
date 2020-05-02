@@ -1,7 +1,5 @@
-import App from '../components/App';
+import * as React from 'react';
 
 export default () => (
-  <App>
     <p>About Page2</p>
-  </App>
 );

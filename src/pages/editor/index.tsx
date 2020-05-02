@@ -1,7 +1,9 @@
+import * as React from 'react';
+
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import { Header, Footer } from '../../components';
-import { EditorComponent } from './editor.component';
+import EditorComponent from '../../components/editor.component';
 
 export default () => (
     <div className='wrapper'>

@@ -56,25 +56,26 @@ const ListTitle = styled.span`
   align-items: center;
 `;
 
-function ListComponent({ group, setComponent}) {
-  return (
-    <List>
-      <ListTitle>{group.title}</ListTitle>
-      {group.components.map((c) => ListItemComponent({ item: c, setComponent}))}
-    </List>
-  );
-}
 
-function ListItemComponent({ item, setComponent }) {
-  return (<ListItem onClick={() => setComponent(item.component)}>{item.title}</ListItem>);
-}
 
 const DevToolsPage: React.FunctionComponent = () => {
   const [component, setComponent] = React.useState(null);
+  function ListComponent({ group, setItemComponent}) {
+    return (
+      <List>
+        <ListTitle>{group.title}</ListTitle>
+        {group.components.map((c) => ListItemComponent({ item: c, setItemComponent}))}
+      </List>
+    );
+  }
+  function ListItemComponent({ item, setItemComponent }) {
+    const handleClick = () => setItemComponent(item.component)
+    return (<ListItem onClick={handleClick}>{item.title}</ListItem>);
+  }
   return (
     <Wrapper>
       <Row align-center>
-        <Aside>{DATA.map((g) => ListComponent({ group: g, setComponent}))}</Aside>
+        <Aside>{DATA.map((g) => ListComponent({ group: g, setItemComponent: setComponent}))}</Aside>
         <Center>{component}</Center>
       </Row>
     </Wrapper>

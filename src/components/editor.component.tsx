@@ -11,11 +11,13 @@ const TEXT_BLOCKS = [
     { id: 'text-6', content: '#6' },
 ];
 
-resetServerContext();
 
-export class EditorComponent extends Component {
+export default class EditorComponent extends Component {
+    public componentDidMount() {
+        resetServerContext();
+    }
     public onDragEnd(result: any) {
-        const { destination, source, draggableId } = result;
+        const { destination, source } = result;
         if (!destination) {
             return;
         }

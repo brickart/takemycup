@@ -17,7 +17,7 @@ class MyApp extends React.Component<AppContext & AppProps> {
         <Head>
           <title>Take my cup</title>
           <link
-            href='https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab&display=swap'
+            href='https://fonts.googleapis.com/css?family=Roboto:300,400,700|Roboto+Slab&display=swap'
             rel='stylesheet'
           />
         </Head>

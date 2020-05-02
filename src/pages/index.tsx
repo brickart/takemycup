@@ -1,8 +1,9 @@
-import { Component } from 'react';
+import * as React from 'react';
+const { Component } = React;
 
 const CONTENT_DATA = {
   en: {
-    headerContent: 'All your dreams comes brew',
+    headerContent: 'All your dreams come brew',
     comingSoon: 'Coming soon...',
     language: 'Language',
     copyright: '© 2020 Takemycup. All rights reserved.',
@@ -53,7 +54,7 @@ export default class IndexPage extends Component {
 
   public componentDidMount() {
     this.setLocalText();
-    const deadline = new Date('2020-05-01T00:00:00');
+    const deadline = new Date('2020-06-01T00:00:00');
     const now = new Date();
     const timer = new Date(+deadline - +now);
 
